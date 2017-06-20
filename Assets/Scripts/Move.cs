@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Move : MonoBehaviour {
     public static float speed = 3f;
+    private Animator Hero_Anim;
     void Start()
     {
-
+        Hero_Anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -25,5 +26,6 @@ public class Move : MonoBehaviour {
             Vector3 directionY = transform.up * moveY;
             transform.position = Vector3.MoveTowards(transform.position, transform.position + directionY, speed * Time.deltaTime);
         }
+        
     }
 }
