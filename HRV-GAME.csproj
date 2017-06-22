@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\NewBehaviourScript1.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\InteractiveObj.cs" />
     <Compile Include="Assets\Scripts\MouseFollower.cs" />
