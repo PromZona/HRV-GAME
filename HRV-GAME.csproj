@@ -81,6 +81,7 @@
     <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\NewBehaviourScript1.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Interaction.cs" />
     <Compile Include="Assets\Scripts\InteractiveObj.cs" />
     <Compile Include="Assets\Scripts\MouseFollower.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />

@@ -2,19 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.SceneManagement;
+/*public class Interactive : Interaction
+{
+    public Interactive Obj;
+}*/
 
 public class InteractiveObj : MonoBehaviour {
 
-    private Animator OnUseAnim; //door sprite Animator (can be used for others probably)
-    BoxCollider2D Col; 
-
-
+    public string NextSceneName;
+    private BoxCollider2D Col;
+    private Animator Anim;
     // Use this for initialization
     void Awake () {
         Col = GetComponent<BoxCollider2D>();
-        OnUseAnim = GetComponent<Animator>();
+        Anim = GetComponent<Animator>();
     }
   
     // Update is called once per frame
@@ -23,11 +25,23 @@ public class InteractiveObj : MonoBehaviour {
   
 
 	}
-    void OnTriggerEnter2D(Collider2D collider) //Trigger for doors (planning to change later)
+    void OnTriggerStay2D(Collider2D collider) //Trigger for doors (planning to change later)
     {
-        OnUseAnim.SetBool("CallOpening", true); //Calls for opening animation
-        
-        Col.enabled = false; //Disables Collider Trigger on door sprite
+        if (Input.GetKey(KeyCode.E))
+        {
+            Anim.SetBool("CallOpening", true); //Calls for opening animation
+            if (tag == "Door") //Tag check to avoid collision delete on chests etc
+            {
+                Col.enabled = false; //Disables Collider Trigger on door sprite (ONLY FOR DOORS)
+            }
+            if (tag=="Chest")
+            {
+                //Later here will be chest containment call with UI and stuff (also sound)
+            }
+            if (tag == "Level_end")
+            {
+                SceneManager.LoadScene(NextSceneName);
+            }
+        }
     }
-
 }
