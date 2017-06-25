@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6B441EE1-F3E4-88EB-E927-44AD67DB2014}</ProjectGuid>
+    <ProjectGuid>{44CE19E6-837A-418F-3CD4-2372A0846BE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,10 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\MouseFollower.cs" />
-     <Compile Include="Assets\Scripts\Move.cs" />
+     <Compile Include="Assets\Scripts\Character\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Character\MouseFollower.cs" />
+     <Compile Include="Assets\Scripts\Character\Move.cs" />
+     <Compile Include="Assets\Scripts\Enemys\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Interaction.cs" />
+     <Compile Include="Assets\Scripts\InteractiveObj.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Programms/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
