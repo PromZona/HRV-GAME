@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Character\Attack.cs" />
      <Compile Include="Assets\Scripts\Character\CameraController.cs" />
      <Compile Include="Assets\Scripts\Character\MouseFollower.cs" />
      <Compile Include="Assets\Scripts\Character\Move.cs" />
