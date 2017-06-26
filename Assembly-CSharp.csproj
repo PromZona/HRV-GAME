@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Character\MouseFollower.cs" />
      <Compile Include="Assets\Scripts\Character\Move.cs" />
      <Compile Include="Assets\Scripts\Enemys\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemys\LookAtCharacter.cs" />
      <Compile Include="Assets\Scripts\Interaction.cs" />
      <Compile Include="Assets\Scripts\InteractiveObj.cs" />
  <Reference Include="UnityEngine.UI">
